@@ -70,7 +70,7 @@ function draw() {
   text("Distance: "+ distance,900,30);
   
   if(gameState===PLAY){
-    
+    mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
    distance = distance + Math.round(getFrameRate()/50);
    path.velocityX = -(6 + 2*distance/150);
   
